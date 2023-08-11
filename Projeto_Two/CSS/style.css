@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background-color: rgb(225, 225, 225);
+}
+
+header .logo1, .logo2{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+
+header img{
+    height: 35px;
+}
+
+/* section */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* form */
+
+div.form_container{
+    height: 550px;
+    width: 80%;
+    background-image: url(../Assets/bg-form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section div.form_container form{
+    height: 590px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    margin-right: 40px;
+    box-shadow: 2px 2px 5px rgba(117,117,117,1);
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+section div.form_container form h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: rgba(210, 210, 210, 0.8);
+    padding: 25px 15px;
+}
+
+.input_container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(110, 110, 110);
+}
+
+form .input_container input[type=text], input[type=email], input[type=tel]{
+    height: 50px;
+    padding: 0 10px;
+    border: 0;
+    border: 1px solid #ccc;
+}
+
+form .input_submit_container input[type=submit]{
+    border: 0;
+    width: 340px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: #033C50;
+    color: white;
+    cursor: pointer;
+}
+
+form .warning{
+    width: 95%;
+    color: rgb(110, 110, 110);
+}
+
+/* center */
+
+section div.center{
+    width: 80%;
+    height: 180px;
+    background-color: #29526d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.center .arrow_img img{
+    position: relative;
+    bottom: 60px;
+}
+
+section div.center div.center_title{
+    position: relative;
+    bottom: 20px;
+}
+
+section div.center div.center_title h2{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section div.center div.center_text p{
+    font-size: 18px;
+}
+
+/* mosaic */
+
+div.mosaic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* info */
+
+div.mosaic div.info{
+    height: 400px;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+div.mosaic div.info div.info_img{
+    height: 100%;
+    width: 60%;
+}
+
+div.mosaic div.info div.info_img img{
+    height: 100%;
+    width: 100%;
+}
+
+div.mosaic div.info div.info_text{
+    width: 40%;
+    height: 100%;
+    background-color: #4683AB;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mosaic div.info div.info_text p{
+    font-size: 18px;
+}
+
+div.mosaic div.info:nth-child(1), div.mosaic div.info:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+/* footer */
+
+footer{
+    height: 80px;
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    justify-content: center;
+}
+
+footer div.footer_img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer div.footer_img img{
+    height: 40px;
+}
